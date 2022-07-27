@@ -1,0 +1,60 @@
+.header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    overflow-x: scroll;
+  }
+  
+  .header::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* hide scrollbar for IE, Edge and firefox */
+  .header {
+    -ms-overflow-style: none; /* IE edge*/
+    scrollbar-width: none; /* firefox */
+  }
+  
+  .header__icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100px;
+  }
+
+  .header__icon > .icon {
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+  } 
+  
+  .header__icon:hover > p {
+    display: inline;
+  }
+  .header__icon > p {
+    font-size: small;
+    margin-right: auto;
+    margin-left: auto;
+    letter-spacing: 3px;
+    display: none;
+    text-transform: uppercase;
+  }
+  
+  .header__icon--active > p {
+    display: inline-flex !important;
+  }
+  
+  .header__icons {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header > img {
+    object-fit: contain;
+    height: 80px;
+  }
+  
